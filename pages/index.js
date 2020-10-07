@@ -7,7 +7,7 @@ const App = (props) =>  (
         <div className="row">
             <div className="container">
                 <div className="col-md-12">
-                <h1>Recent Blogs eqwewq</h1>
+                <h1>Recent Blogs 312321</h1>
                 </div>
                
                 <Post />

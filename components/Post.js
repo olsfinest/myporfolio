@@ -11,7 +11,7 @@ class Post extends React.Component {
     }
 
     componentDidMount() {
-        axios.get('http://2cf441c504fa.ngrok.io/reactporfoliowp/wp-json/wp/v2/posts')
+        axios.get('https://2cf441c504fa.ngrok.io/reactporfoliowp/wp-json/wp/v2/posts')
         .then(res => this.setState({
             post : res.data ,
             isLoaded : true

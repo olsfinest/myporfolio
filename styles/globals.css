@@ -14,3 +14,82 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Open+Sans+Condensed:wght@300&display=swap');
+
+@media (min-width: 768px) {
+    .col-md-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+        float:left;
+    }
+}
+
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn-primary a {
+    color:white;
+}
+
+span.btn-danger a {
+    color:white;
+    padding:10px;
+    display:inline-block;
+}
+span.btn-danger {
+    padding: 0px;
+    display: block;
+    max-width: 200px;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size:40px
+}
+
+
+body {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.nav-tabs {
+    border-bottom: 0px solid #dee2e6;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 581px;
+    margin: 50px auto;
+}
+
+.nav-tabs li {
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.nav-tabs li a {
+    color:black;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 24px;
+}
+
+.postlist {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-height: 350px;
+}
+
+.postlist a {
+    color:red;
+    text-align:right;
+    display:block;
+}

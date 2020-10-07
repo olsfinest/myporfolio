@@ -24,7 +24,7 @@ class Login extends React.Component {
 
         
         var myHeaders = new Headers();
-        myHeaders.append("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvd3d3LmJhZ3Vpb3RyYW5zaWVudC5uZXRcL29sc2ZpbmVzdHRlc3QiLCJpYXQiOjE2MDE5OTcyMzIsIm5iZiI6MTYwMTk5NzIzMiwiZXhwIjoxNjAyNjAyMDMyLCJkYXRhIjp7InVzZXIiOnsiaWQiOiIxIn19fQ.dwQ5OZhW78zQVQbNsLS6a1D2usmgbZEMFEiuYaNN7-4");
+        myHeaders.append("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODA4MFwvcmVhY3Rwb3Jmb2xpb3dwIiwiaWF0IjoxNjAyMDY2ODE3LCJuYmYiOjE2MDIwNjY4MTcsImV4cCI6MTYwMjY3MTYxNywiZGF0YSI6eyJ1c2VyIjp7ImlkIjoiMSJ9fX0.kuXGkedlMd9yrwTbOlVx-PKXWhRju0yTFlj4A44UZAw");
 
         var formdata = new FormData();
         formdata.append("username", this.state.username);
@@ -38,7 +38,7 @@ class Login extends React.Component {
         };
 
 
-        fetch("https://www.baguiotransient.net/olsfinesttest/wp-json/admin/loggedinuser", requestOptions).then((resp) => resp.json()).then(function(data) {
+        fetch("http://localhost:8080/reactporfoliowp/wp-json/admin/loggedinuser", requestOptions).then((resp) => resp.json()).then(function(data) {
 
         console.log(data);
 

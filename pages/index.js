@@ -18,15 +18,6 @@ const App = (props) =>  (
 
 );
 
-App.getInitialProps = async function(query) {
 
-    const res = await fetch('https://www.baguiotransient.net/olsfinesttest/wp-json/wp/v2/posts' + query);
-    const data = await res.json();
-
-    return {
-        bpi: data.bpi
-    }
-
-}
 
 export default App;

@@ -22,7 +22,7 @@ class AddPost extends React.Component {
             var myHeaders = new Headers();
 
             myHeaders.append("Content-Type", "application/json");
-            myHeaders.append("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvd3d3LmJhZ3Vpb3RyYW5zaWVudC5uZXRcL29sc2ZpbmVzdHRlc3QiLCJpYXQiOjE2MDE5OTcyMzIsIm5iZiI6MTYwMTk5NzIzMiwiZXhwIjoxNjAyNjAyMDMyLCJkYXRhIjp7InVzZXIiOnsiaWQiOiIxIn19fQ.dwQ5OZhW78zQVQbNsLS6a1D2usmgbZEMFEiuYaNN7-4");
+            myHeaders.append("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvd3d3LmJhZ3Vpb3RyYW5zaWVudC5uZXRcL29sc2ZpbmVzdHRlc3QiLCJpYXQiOjE2MDIwNjk3NDgsIm5iZiI6MTYwMjA2OTc0OCwiZXhwIjoxNjAyNjc0NTQ4LCJkYXRhIjp7InVzZXIiOnsiaWQiOiIxIn19fQ.izz4-iyCxt8b4MCQq9i76w6yKn4CSwLmhIgYHXqsdDU");
 
             var raw = JSON.stringify({"title":this.state.title,"content":this.state.content,"status":"publish"});
 

@@ -24,7 +24,7 @@ class Login extends React.Component {
 
         
         var myHeaders = new Headers();
-        myHeaders.append("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODA4MFwvcmVhY3Rwb3Jmb2xpb3dwIiwiaWF0IjoxNjAyMDY2ODE3LCJuYmYiOjE2MDIwNjY4MTcsImV4cCI6MTYwMjY3MTYxNywiZGF0YSI6eyJ1c2VyIjp7ImlkIjoiMSJ9fX0.kuXGkedlMd9yrwTbOlVx-PKXWhRju0yTFlj4A44UZAw");
+        myHeaders.append("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8yY2Y0NDFjNTA0ZmEubmdyb2suaW9cL3JlYWN0cG9yZm9saW93cCIsImlhdCI6MTYwMjA3NDQ3MSwibmJmIjoxNjAyMDc0NDcxLCJleHAiOjE2MDI2NzkyNzEsImRhdGEiOnsidXNlciI6eyJpZCI6IjEifX19.TKJNAqafBZiUGX_4pAtOdYhmoid-I4Z-C3KfBeA6dHQ");
 
         var formdata = new FormData();
         formdata.append("username", this.state.username);

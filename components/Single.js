@@ -20,7 +20,7 @@ class Single extends React.Component {
         };
 
         const $id = getUrlParameter('id');
-      
+       
         axios.get('http://2cf441c504fa.ngrok.io/reactporfoliowp/wp-json/wp/v2/posts/' + $id)
         .then(res => this.setState({
             post : res.data ,

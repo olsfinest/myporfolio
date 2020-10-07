@@ -21,7 +21,7 @@ class Post extends React.Component {
 
         componentDidMount() {
 
-            axios.get('https://www.baguiotransient.net/olsfinesttest/wp-json/wp/v2/posts')
+            axios.get('http://2cf441c504fa.ngrok.io/reactporfoliowp/wp-json/wp/v2/posts')
                 .then(res => this.setState({
                     post : res.data ,
                     isLoaded : true
@@ -37,7 +37,7 @@ class Post extends React.Component {
             const id =  event.target.value;
 
             var myHeaders = new Headers();
-            myHeaders.append("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvd3d3LmJhZ3Vpb3RyYW5zaWVudC5uZXRcL29sc2ZpbmVzdHRlc3QiLCJpYXQiOjE2MDE5OTcyMzIsIm5iZiI6MTYwMTk5NzIzMiwiZXhwIjoxNjAyNjAyMDMyLCJkYXRhIjp7InVzZXIiOnsiaWQiOiIxIn19fQ.dwQ5OZhW78zQVQbNsLS6a1D2usmgbZEMFEiuYaNN7-4");
+            myHeaders.append("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8yY2Y0NDFjNTA0ZmEubmdyb2suaW9cL3JlYWN0cG9yZm9saW93cCIsImlhdCI6MTYwMjA3NDQ3MSwibmJmIjoxNjAyMDc0NDcxLCJleHAiOjE2MDI2NzkyNzEsImRhdGEiOnsidXNlciI6eyJpZCI6IjEifX19.TKJNAqafBZiUGX_4pAtOdYhmoid-I4Z-C3KfBeA6dHQ");
 
             var raw = "";
 
@@ -48,7 +48,7 @@ class Post extends React.Component {
             redirect: 'follow'
             };
 
-            fetch("https://www.baguiotransient.net/olsfinesttest/wp-json/wp/v2/posts/" + id, requestOptions)
+            fetch("http://2cf441c504fa.ngrok.io/reactporfoliowp/wp-json/wp/v2/posts/" + id, requestOptions)
             .then((resp) => resp.json()).then(function(data) {
                 
                 alert("Deleted");

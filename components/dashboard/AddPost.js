@@ -22,7 +22,7 @@ class AddPost extends React.Component {
             var myHeaders = new Headers();
 
             myHeaders.append("Content-Type", "application/json");
-            myHeaders.append("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvd3d3LmJhZ3Vpb3RyYW5zaWVudC5uZXRcL29sc2ZpbmVzdHRlc3QiLCJpYXQiOjE2MDIwNjk3NDgsIm5iZiI6MTYwMjA2OTc0OCwiZXhwIjoxNjAyNjc0NTQ4LCJkYXRhIjp7InVzZXIiOnsiaWQiOiIxIn19fQ.izz4-iyCxt8b4MCQq9i76w6yKn4CSwLmhIgYHXqsdDU");
+            myHeaders.append("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8yY2Y0NDFjNTA0ZmEubmdyb2suaW9cL3JlYWN0cG9yZm9saW93cCIsImlhdCI6MTYwMjA3NDQ3MSwibmJmIjoxNjAyMDc0NDcxLCJleHAiOjE2MDI2NzkyNzEsImRhdGEiOnsidXNlciI6eyJpZCI6IjEifX19.TKJNAqafBZiUGX_4pAtOdYhmoid-I4Z-C3KfBeA6dHQ");
 
             var raw = JSON.stringify({"title":this.state.title,"content":this.state.content,"status":"publish"});
 
@@ -34,7 +34,7 @@ class AddPost extends React.Component {
             };
 
     
-            fetch("https://www.baguiotransient.net/olsfinesttest/wp-json/wp/v2/posts/", requestOptions).then((resp) => resp.json()).then(function(data) {
+            fetch("http://2cf441c504fa.ngrok.io/reactporfoliowp/wp-json/wp/v2/posts/", requestOptions).then((resp) => resp.json()).then(function(data) {
  
               alert("Added");
               Router.push('/dashboard');

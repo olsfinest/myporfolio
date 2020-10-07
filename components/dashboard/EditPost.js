@@ -24,7 +24,7 @@ class EditPost extends React.Component {
     
             const $id = getUrlParameter('id');
           
-            axios.get('http://2cf441c504fa.ngrok.io/reactporfoliowp/wp-json/wp/v2/posts/' + $id)
+            axios.get('https://2cf441c504fa.ngrok.io/reactporfoliowp/wp-json/wp/v2/posts/' + $id)
             .then(res => this.setState({
                 post : res.data ,
                 isLoaded : true,
@@ -48,7 +48,7 @@ class EditPost extends React.Component {
     
             const $id = getUrlParameter('id');
 
-            const urlfetch = "http://2cf441c504fa.ngrok.io/reactporfoliowp/wp-json/wp/v2/posts/" + $id;
+            const urlfetch = "https://2cf441c504fa.ngrok.io/reactporfoliowp/wp-json/wp/v2/posts/" + $id;
 
             var myHeaders = new Headers();
             myHeaders.append("Content-Type", "application/json");

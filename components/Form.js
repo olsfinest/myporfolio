@@ -32,7 +32,7 @@ class Form extends React.Component {
         redirect: 'follow'
         };
 
-        fetch("http://2cf441c504fa.ngrok.io/reactporfoliowp/wp-json/wp/v2/posts/", requestOptions).then(response => response.text()).then(result => console.log(result)).catch(error => console.log('error', error));
+        fetch("https://2cf441c504fa.ngrok.io/reactporfoliowp/wp-json/wp/v2/posts/", requestOptions).then(response => response.text()).then(result => console.log(result)).catch(error => console.log('error', error));
 
         alert("Post Submitted");
 

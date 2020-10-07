@@ -34,7 +34,7 @@ class AddPost extends React.Component {
             };
 
     
-            fetch("http://2cf441c504fa.ngrok.io/reactporfoliowp/wp-json/wp/v2/posts/", requestOptions).then((resp) => resp.json()).then(function(data) {
+            fetch("https://2cf441c504fa.ngrok.io/reactporfoliowp/wp-json/wp/v2/posts/", requestOptions).then((resp) => resp.json()).then(function(data) {
  
               alert("Added");
               Router.push('/dashboard');

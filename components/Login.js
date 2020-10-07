@@ -38,7 +38,7 @@ class Login extends React.Component {
         };
 
 
-        fetch("http://localhost:8080/reactporfoliowp/wp-json/admin/loggedinuser", requestOptions).then((resp) => resp.json()).then(function(data) {
+        fetch("https://2cf441c504fa.ngrok.io/reactporfoliowp/wp-json/admin/loggedinuser", requestOptions).then((resp) => resp.json()).then(function(data) {
 
         console.log(data);
 

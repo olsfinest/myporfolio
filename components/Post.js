@@ -18,7 +18,7 @@ class Post extends React.Component {
         }))
         .catch(err => console.log(err));
     }
-    
+     
     
     render() {
 

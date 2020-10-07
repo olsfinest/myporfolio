@@ -24,7 +24,7 @@ class Login extends React.Component {
 
         
         var myHeaders = new Headers();
-        
+
         myHeaders.append("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8yY2Y0NDFjNTA0ZmEubmdyb2suaW9cL3JlYWN0cG9yZm9saW93cCIsImlhdCI6MTYwMjA3NDQ3MSwibmJmIjoxNjAyMDc0NDcxLCJleHAiOjE2MDI2NzkyNzEsImRhdGEiOnsidXNlciI6eyJpZCI6IjEifX19.TKJNAqafBZiUGX_4pAtOdYhmoid-I4Z-C3KfBeA6dHQ");
 
         var formdata = new FormData();
@@ -39,7 +39,7 @@ class Login extends React.Component {
         };
 
 
-        fetch("https://2cf441c504fa.ngrok.io/reactporfoliowp/wp-json/admin/loggedinuser", requestOptions).then((resp) => resp.json()).then(function(data) {
+        fetch("http://2cf441c504fa.ngrok.io/reactporfoliowp/wp-json/admin/loggedinuser", requestOptions).then((resp) => resp.json()).then(function(data) {
 
         console.log(data);
 
